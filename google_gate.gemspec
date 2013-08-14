@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = GoogleGate::VERSION
   spec.authors       = ["Tom Hanley"]
   spec.email         = ["tjhanleyx@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Rails Engine for adding google apps authentication to lock down your staging or pre-launch sites to members of your domain only}
+  spec.summary       = %q{Locking down your staging applications with HTTP_AUTH is so 2000 'n late. Use your company's Google App account to restrict access to your staging app}
+  spec.homepage      = "https://github.com/tjhanley/google_gate"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

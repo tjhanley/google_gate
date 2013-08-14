@@ -1,6 +1,8 @@
 # GoogleGate
 
-TODO: Write a gem description
+Rails Engine for adding google apps authentication to lock down your staging or pre-launch sites to members of your domain only.
+
+Inspired by the work of my friend @bmorearty when we were at Lytro.
 
 ## Installation
 
