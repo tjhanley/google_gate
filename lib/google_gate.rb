@@ -4,10 +4,10 @@ require "securerandom"
 
 module GoogleGate
 
-  mattr_accessor :app_root
+  #mattr_accessor :gate_keeper_required?
 
   def self.setup
-    yeild self
+    yield self
   end
 
 end

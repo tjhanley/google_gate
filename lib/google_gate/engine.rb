@@ -3,7 +3,7 @@ module GoogleGate
 
     initializer "google_gate.load_app_instance_data" do |app|
       GoogleGate.setup do |config|
-        config.app_root = app.root
+        #config.gate_keeper_required? = true
       end
     end
 
@@ -11,5 +11,11 @@ module GoogleGate
       app.middleware.use ::ActionDispatch::Static, "#{root}/public"
     end
 
+    #initializer 'google_gate.controller' do |app|
+    #  ActiveSupport.on_load(:action_controller) do
+    #    include GoogleGatesController
+    #    include ApplicationController
+    #  end
+    #end
   end
 end
