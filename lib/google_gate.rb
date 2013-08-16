@@ -1,6 +1,5 @@
 require "google_gate/version"
 require "active_support/dependencies"
-require "securerandom"
 
 module GoogleGate
 
@@ -9,6 +8,8 @@ module GoogleGate
   def self.setup
     yield self
   end
+
+
 
 end
 

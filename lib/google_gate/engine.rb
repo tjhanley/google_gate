@@ -11,6 +11,12 @@ module GoogleGate
       app.middleware.use ::ActionDispatch::Static, "#{root}/public"
     end
 
+    initializer  "google_gate.load_helpers" do
+      ActiveSupport.on_load(:action_controller) do
+        include GoogleGate::GoogleGateHelper
+      end
+    end
+
     #initializer 'google_gate.controller' do |app|
     #  ActiveSupport.on_load(:action_controller) do
     #    include GoogleGatesController
